@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Dark background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 350px; /* Slightly wider for better content fit */
+    padding: 20px;
+    background-color: #333; /* Slightly lighter black for the form background */
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Softer shadow for elegance */
+    text-align: center;
+    color: #ffd700; /* Gold text color */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffd700; /* Gold for the heading */
+}
+
+.promo-message {
+    color: #ffd700; /* Gold color for the promo message */
+    margin-bottom: 20px;
+    font-size: 15px; /* Slightly larger font for emphasis */
+    line-height: 1.5; /* Better readability */
+}
+
+.promo-message a {
+    color: #ffd700; /* Gold color for the link */
+    text-decoration: none; /* Remove underline for a cleaner look */
+    font-weight: bold;
+}
+
+.promo-message a:hover {
+    color: #e6b800; /* Slightly darker gold on hover */
+    text-decoration: underline; /* Add underline on hover to indicate a link */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #ffd700; /* Gold for labels */
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffd700; /* Gold border */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1c1c1c; /* Dark background for input fields */
+    color: #ffd700; /* Gold text for input fields */
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #b3b3b3; /* Grey color for placeholder text */
+}
+
+button {
+    padding: 10px;
+    background-color: #ffd700; /* Gold button background */
+    border: none;
+    border-radius: 5px;
+    color: #1c1c1c; /* Dark text color on the button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6b800; /* Slightly darker gold on hover */
+}
+
+#error-message {
+    color: #ff4d4d; /* Red for error messages */
+    margin-top: 10px;
+    font-size: 14px;
+}
