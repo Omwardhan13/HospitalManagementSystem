@@ -1,45 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1c1c1c; /* Dark background */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern font */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Blue gradient background */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #fff; /* Set default text color to white for readability */
 }
 
 .login-container {
-    width: 350px; /* Slightly wider for better content fit */
-    padding: 20px;
-    background-color: #333; /* Slightly lighter black for the form background */
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Softer shadow for elegance */
+    width: 350px;
+    padding: 30px; /* Increased padding for more space */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Stronger shadow for depth */
     text-align: center;
-    color: #ffd700; /* Gold text color */
 }
 
 h2 {
     margin-bottom: 20px;
-    color: #ffd700; /* Gold for the heading */
+    color: #ffd700; /* Gold color for the heading */
+    font-size: 24px; /* Slightly larger heading */
 }
 
 .promo-message {
     color: #ffd700; /* Gold color for the promo message */
     margin-bottom: 20px;
-    font-size: 15px; /* Slightly larger font for emphasis */
-    line-height: 1.5; /* Better readability */
+    font-size: 16px; /* Larger font for better readability */
+    line-height: 1.6; /* Better readability */
 }
 
 .promo-message a {
-    color: #ffd700; /* Gold color for the link */
-    text-decoration: none; /* Remove underline for a cleaner look */
+    color: #ffd700;
+    text-decoration: none;
     font-weight: bold;
 }
 
 .promo-message a:hover {
-    color: #e6b800; /* Slightly darker gold on hover */
-    text-decoration: underline; /* Add underline on hover to indicate a link */
+    color: #e6b800;
+    text-decoration: underline;
 }
 
 form {
@@ -49,7 +50,8 @@ form {
 
 label {
     margin-bottom: 5px;
-    color: #ffd700; /* Gold for labels */
+    color: #ffd700; /* Gold color for labels */
+    font-weight: bold; /* Bold labels for emphasis */
 }
 
 input[type="text"], input[type="password"] {
@@ -58,27 +60,34 @@ input[type="text"], input[type="password"] {
     border: 1px solid #ffd700; /* Gold border */
     border-radius: 5px;
     font-size: 16px;
-    background-color: #1c1c1c; /* Dark background for input fields */
-    color: #ffd700; /* Gold text for input fields */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent input background */
+    color: #ffd700;
+    outline: none; /* Remove outline for a cleaner look */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 
 input[type="text"]::placeholder, input[type="password"]::placeholder {
     color: #b3b3b3; /* Grey color for placeholder text */
 }
 
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #e6b800; /* Change border color on focus */
+}
+
 button {
     padding: 10px;
-    background-color: #ffd700; /* Gold button background */
+    background-color: #ffd700;
     border: none;
     border-radius: 5px;
     color: #1c1c1c; /* Dark text color on the button */
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for background and scaling */
 }
 
 button:hover {
-    background-color: #e6b800; /* Slightly darker gold on hover */
+    background-color: #e6b800;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
 #error-message {
