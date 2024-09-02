@@ -13,33 +13,34 @@ body {
 .login-container {
     width: 350px;
     padding: 30px; /* Increased padding for more space */
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border-radius: 8px; /* Slightly more rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Stronger shadow for depth */
+    background: linear-gradient(135deg, #ffffffdd, #f0f0f0dd); /* Subtle gradient for the container */
+    border-radius: 10px; /* More rounded corners for a modern look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
     text-align: center;
+    position: relative;
 }
 
 h2 {
     margin-bottom: 20px;
-    color: #ffd700; /* Gold color for the heading */
+    color: #2a5298; /* Complementary color for the heading */
     font-size: 24px; /* Slightly larger heading */
 }
 
 .promo-message {
-    color: #ffd700; /* Gold color for the promo message */
+    color: #2a5298; /* Complementary color for the promo message */
     margin-bottom: 20px;
     font-size: 16px; /* Larger font for better readability */
     line-height: 1.6; /* Better readability */
 }
 
 .promo-message a {
-    color: #ffd700;
+    color: #d64550; /* Complementary color for the link */
     text-decoration: none;
     font-weight: bold;
 }
 
 .promo-message a:hover {
-    color: #e6b800;
+    color: #bf3a3a; /* Darker shade on hover */
     text-decoration: underline;
 }
 
@@ -50,43 +51,44 @@ form {
 
 label {
     margin-bottom: 5px;
-    color: #ffd700; /* Gold color for labels */
+    color: #2a5298; /* Complementary color for labels */
     font-weight: bold; /* Bold labels for emphasis */
 }
 
 input[type="text"], input[type="password"] {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ffd700; /* Gold border */
+    border: 1px solid #2a5298; /* Complementary border color */
     border-radius: 5px;
     font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent input background */
-    color: #ffd700;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input background */
+    color: #333; /* Dark text for input fields */
     outline: none; /* Remove outline for a cleaner look */
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition for border color */
 }
 
 input[type="text"]::placeholder, input[type="password"]::placeholder {
-    color: #b3b3b3; /* Grey color for placeholder text */
+    color: #999; /* Lighter grey for placeholder text */
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #e6b800; /* Change border color on focus */
+    border-color: #d64550; /* Change border color on focus */
+    background-color: #fff; /* Brighter background on focus */
 }
 
 button {
     padding: 10px;
-    background-color: #ffd700;
+    background-color: #d64550; /* Complementary button background */
     border: none;
     border-radius: 5px;
-    color: #1c1c1c; /* Dark text color on the button */
+    color: #fff; /* White text color on the button */
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for background and scaling */
 }
 
 button:hover {
-    background-color: #e6b800;
+    background-color: #bf3a3a; /* Slightly darker shade on hover */
     transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
